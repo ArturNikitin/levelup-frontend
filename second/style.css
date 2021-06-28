@@ -1,0 +1,103 @@
+/* Selector; Сила селектора равна 1*/
+h1{ 
+    color: red;
+}
+/* У меньшего приоритет больше */
+h1 {
+    color: green;
+}
+
+/* Сила селектора равна 100, используется редко */
+#unique {
+    color: blue;
+}
+
+/* По классу силаs селектора равна 10 */
+.text {
+    color: greenyellow;
+}
+
+/* Силы селекторов суммируются */
+h1, .text {
+    color: blueviolet;
+}
+
+.link{
+    font-size: 40px;
+}
+
+/* псевдо элементы */
+.link:hover {
+    color: goldenrod;
+}
+
+.block {
+    height: 100px;
+    max-width: 100px; /* максимум, но может быть меньше при сжимании       */
+    border: 10px solid red;
+    color: greenyellow;
+    background-color: grey;
+    padding: 10px; /* внутренний отступ */
+    margin: 10px; /* внешний */
+}
+
+/* у строчных нету высоты и ширины не работает */
+.span {
+    height: 100px;
+    width: 100px;
+}
+
+/* to all tags */
+*{
+    text-decoration:  none;
+    cursor: pointer;
+}
+
+.par {
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 20px;
+    font-family: 'Lato', sans-serif;
+}
+
+/* 
+Локально подключить
+@font-face {
+    font-family: ;
+    src: url();
+} */
+
+.wrapper {
+    margin: 0 auto;
+    width: 400px;
+    height: 500px;
+    border: 2px solid red;
+    position: relative;
+}
+
+.block-1,
+.block-2 {
+    height: 50px;
+}
+
+.block-1 {
+    background: pink;
+    /* position: relative;
+    left: 200px;
+    bottom: 0;
+    right: 0;
+    top: 10px; */
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    width: 100%;
+}
+
+.block-2 {
+    background: yellow;
+}
+
+/* position; static - default */
+
+
+
