@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,6 +11,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@100&display=swap" rel="stylesheet">
     <title>Document</title>
 </head>
+
 <body>
     <header class="header">
         <div class=header_container>
@@ -29,24 +31,65 @@
         </div>
     </header>
     <main class="main">
-        <div class="main__container">
-            <div class="hello">
-                <div class="hello__context">
-                    <h1 class="hello__context-text">
-                        Hi, I am John, Creative Technologist
-                    </h1>
-                    <p class="hello__context-paragraph">
-                        Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.
-                    </p>
-                    <button class = "hello__context-button">
+        <section class="hello">
+            <div class="hello__context">
+                <h1 class="hello__context-text">
+                    Hi, I am John, Creative Technologist
+                </h1>
+                <p class="hello__context-paragraph">
+                    Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.
+                </p>
+                <button class="hello__context-button">
                         Download Resume
                     </button>
+            </div>
+            <div class="hello__avatar">
+                <img class="hello__image" src="../static/dart.jpeg" alt="oops">
+            </div>
+        </section>
+        <section class="posts">
+            <div class="posts__wrapper">
+                <div class="posts__header">
+                    <span class="post__header-recent-posts">Recent posts</span>
+                    <a class="post__header-view-all" href="#">View all</a>
                 </div>
-                <div class="hello__avatar">
-                    <img class = "hello__image" src="../static/dart.jpeg" alt="oops">
+                <div class="posts__container">
+                    <div class="posts__wrapper-inner">
+                        <div class="post">
+                            <div class="post-inner">
+                                <div class="posts__container-paragraph">
+                                    Making a design system from scratch
+                                </div>
+                                <div class="posts__container-info">
+                                    <time class="post-time">12 Feb 2020</time>
+                                    <span class="post-sign">|</span>
+                                    <span class="post-description">Design, Pattern</span>
+                                </div>
+                                <div class="posts__container-text">
+                                    <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="post">
+                            <div class="post-inner">
+                                <div class="posts__container-paragraph">
+                                    Creating pixel perfect icons in Figma
+                                </div>
+                                <div class="posts__container-info">
+                                    <time class="post-time">12 Feb 2020</time>
+                                    <span class="post-sign">|</span>
+                                    <span class="post-description">Figma, Icon desigh</span>
+                                </div>
+                                <div class="posts__container-text">
+                                    <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
-        </div>
+        </section>
     </main>
 </body>
+
 </html>
